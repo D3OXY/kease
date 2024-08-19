@@ -72,7 +72,8 @@ body {
 }
 
 .text-stroke-light {
-    -webkit-text-stroke-color: white;
+    color: black;
+    /* -webkit-text-stroke-color: black; */
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
