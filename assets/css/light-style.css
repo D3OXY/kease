@@ -72,7 +72,7 @@ body {
 }
 
 .text-stroke-light {
-    -webkit-text-stroke-color: #111;
+    -webkit-text-stroke-color: white;
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {

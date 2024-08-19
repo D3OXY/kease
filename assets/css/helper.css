@@ -624,10 +624,10 @@ p.text-xxxlg {
 .text-stroke-light {
     font-weight: bold;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
+    color: black;
+    /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 /* ------------------------------------------------------------- *
