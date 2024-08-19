@@ -1422,6 +1422,9 @@ body:not(.tt-boxed) .tt-header-inner,
     opacity: 0;
     pointer-events: initial;
 }
+.nav-ol-ghost {
+    font-size: 320px !important;
+}
 
 .tt-ol-menu-ghost {
     position: absolute;
