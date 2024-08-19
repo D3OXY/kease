@@ -321,6 +321,7 @@ body.tt-transition .ptr-prel-content {
 }
 
 .ptr-prel-image {
+    width: 200px;
     max-height: 82px; /* You may need to change the img height to match your logo type! */
     opacity: 0.5; /* You may need to change the opacity as well! */
 }
@@ -907,7 +908,8 @@ body:not(.tt-boxed) .tt-header-inner,
     color: #fff;
 }
 .tt-logo img {
-    max-height: 48px; /* You may need to change the img height to match your logo type! */
+    width: 30px;
+    max-height: 60px; /* You may need to change the img height to match your logo type! */
 }
 
 .tt-logo-dark {
@@ -10274,3 +10276,5 @@ body:not(.is-mobile) .tt-style-switch:hover {
         border-radius: 0 50px 50px 0;
     }
 }
+
+/* Custom */
