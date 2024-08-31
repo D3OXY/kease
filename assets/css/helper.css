@@ -13179,3 +13179,10 @@ body.tt-boxed .tt-wrap .tt-row {
         flex-direction: column-reverse !important;
     }
 }
+
+/* deoxy */
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
