@@ -13187,3 +13187,11 @@ body.tt-boxed .tt-wrap .tt-row {
     width: 100% !important;
     object-fit: contain !important;
 }
+
+.h-fit {
+    height: fit-content !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
