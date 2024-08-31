@@ -13183,6 +13183,7 @@ body.tt-boxed .tt-wrap .tt-row {
 /* deoxy */
 
 .video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
+    aspect-ratio: 16 / 9 !important;
+    width: 100% !important;
+    object-fit: contain !important;
 }
