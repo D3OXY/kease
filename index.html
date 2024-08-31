@@ -58,6 +58,13 @@
 	-->
 
 <body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
+    <!-- Modal Structure -->
+    <div id="iframeModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="iframeContainer"></div>
+        </div>
+    </div>
 
 
     <!-- *************************************
@@ -303,8 +310,8 @@
 													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
 													-->
                                                 <div class="portfolio-grid-item">
-                                                    <a href="https://vimeo.com/1004656081" class="pgi-image-wrap"
-                                                        data-cursor="Showreel"
+                                                    <a href="https://vimeo.com/1004656081"
+                                                        class="pgi-image-wrap vimeo-player" data-cursor="Showreel"
                                                         data-html="<iframe src=&quot;https://player.vimeo.com/video/1004656081?byline=0&amp;portrait=0&amp;title=0&amp;autoplay=1&quot; allowfullscreen allow=&quot;autoplay; fullscreen&quot; scrolling=&quot;no&quot;></iframe>"
                                                         data-initialized="true">
                                                         <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
@@ -775,6 +782,22 @@
     <script src="assets/js/theme.js"></script>
 
     <script src="assets/js/cycling-word.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.vimeo-player').addEventListener('click', function (event) {
+                // Step 2: Prevent the default anchor tag click behavior
+                event.preventDefault();
+
+                // Step 3: Extract the iframe HTML from the data-html attribute
+                var iframeHTML = this.getAttribute('data-html');
+                document.getElementById('iframeContainer').innerHTML = iframeHTML;
+                document.getElementById('iframeModal').style.display = "block";
+            });
+            document.querySelector('.close-button').addEventListener('click', function () {
+                document.getElementById('iframeModal').style.display = "none";
+            });
+        });
+    </script>
 
 
 
