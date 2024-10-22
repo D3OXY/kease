@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kease.studio/sitemap.xml
