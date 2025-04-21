@@ -3577,6 +3577,10 @@ video.pgi-video {
     }
 }
 
+.text-push-web {
+    color: black !important;
+}
+
 /* Portfolio grid item title hover (no effect if "pgi-cap-inside" enabled!) */
 #portfolio-grid:not(.pgi-cap-inside) .pgi-title a {
     display: inline;
