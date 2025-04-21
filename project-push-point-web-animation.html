@@ -132,7 +132,7 @@
 
         /* Optional: Add a play indicator */
         .tt-image .video-wrapper::after {
-            content: '▶';
+            /* content: '▶'; */
             position: absolute;
             top: 50%;
             left: 50%;
@@ -406,13 +406,11 @@
 
                                 <div class="tt-col-lg-8">
 
-                                    <h2 class="anim-fadeinup">About the Project</h2>
+                                    <h2 class="anim-fadeinup">Animating the Web3 UI Experience</h2>
 
                                     <div class="anim-fadeinup text-lg">
-                                        <p>Remain valley who mrs uneasy remove wooded him you. Her questions favourite
-                                            him concealed. We to wife face took he. The taste begin early old why since
-                                            dried can first. Prepared as or humoured formerly. Love mrs true get post.
-                                            Express village evening prudent my hundred forming.</p>
+                                        <p>A collection of micro-interactions and web animations created to making the
+                                            user experience more fluid and intuitive.</p>
                                     </div>
 
                                 </div> <!-- /.tt-col -->
@@ -432,7 +430,7 @@
                         <div class="tt-section-inner">
                             <!-- Begin video section -->
                             <div class="tt-image">
-                                <div class="video-wrapper" data-video-src="assets/vids/projects/push-point/main.mp4">
+                                <div class="video-wrapper">
                                     <video class="video-thumbnail tt-lazy" autoplay loop muted playsinline
                                         poster="assets/vids/projects/push-point-web/2.png">
                                         <source src="assets/vids/projects/push-point-web/2.mp4" type="video/mp4">
@@ -447,7 +445,7 @@
                         <div class="tt-section-inner">
                             <!-- Begin video section -->
                             <div class="tt-image">
-                                <div class="video-wrapper" data-video-src="assets/vids/projects/push-point/main.mp4">
+                                <div class="video-wrapper">
                                     <video class="video-thumbnail tt-lazy" autoplay loop muted playsinline
                                         poster="assets/vids/projects/push-point-web/3.png">
                                         <source src="assets/vids/projects/push-point-web/3.mp4" type="video/mp4">
@@ -462,7 +460,7 @@
                         <div class="tt-section-inner">
                             <!-- Begin video section -->
                             <div class="tt-image">
-                                <div class="video-wrapper" data-video-src="assets/vids/projects/push-point/main.mp4">
+                                <div class="video-wrapper">
                                     <video class="video-thumbnail tt-lazy" autoplay loop muted playsinline
                                         poster="assets/vids/projects/push-point-web/4.png">
                                         <source src="assets/vids/projects/push-point-web/4.mp4" type="video/mp4">
@@ -477,7 +475,7 @@
                         <div class="tt-section-inner">
                             <!-- Begin video section -->
                             <div class="tt-image">
-                                <div class="video-wrapper" data-video-src="assets/vids/projects/push-point/main.mp4">
+                                <div class="video-wrapper">
                                     <video class="video-thumbnail tt-lazy" autoplay loop muted playsinline
                                         poster="assets/vids/projects/push-point-web/5.png">
                                         <source src="assets/vids/projects/push-point-web/5.mp4" type="video/mp4">
@@ -492,8 +490,8 @@
                         <div class="tt-section-inner">
                             <!-- Begin video section -->
                             <div class="tt-image">
-                                <div class="video-wrapper" data-video-src="assets/vids/projects/push-point/main.mp4">
-                                    <video class="video-thumbnail tt-lazy" autoplay loop muted playsinline
+                                <div class="video-wrapper">
+                                    <video class=" video-thumbnail tt-lazy" autoplay loop muted playsinline
                                         poster="assets/vids/projects/push-point-web/6.png">
                                         <source src="assets/vids/projects/push-point-web/6.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
@@ -683,7 +681,7 @@
         videoThumbnails.forEach(thumbnail => {
             thumbnail.addEventListener('click', function () {
                 const videoSrc = this.closest('.video-wrapper').dataset.videoSrc;
-                openVideoPopup(videoSrc);
+                // openVideoPopup(videoSrc);
             });
         });
 
