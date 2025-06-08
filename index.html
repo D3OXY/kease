@@ -97,6 +97,83 @@
             position: relative;
             z-index: 2;
         }
+
+        /* See All Works Button Styles */
+        .see-all-works-btn-wrap {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .see-all-works-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .see-all-btn-circle {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .see-all-btn-circle i {
+            color: #000;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .see-all-btn-text {
+            font-family: "Syne", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .see-all-works-btn:hover .see-all-btn-circle {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .see-all-works-btn:hover .see-all-btn-text {
+            color: #fff;
+            transform: translateX(5px);
+        }
+
+        .see-all-works-btn:hover .see-all-btn-circle i {
+            transform: translateX(2px);
+        }
+
+        @media (max-width: 768px) {
+            .see-all-works-btn-wrap {
+                margin-top: 20px;
+            }
+
+            .see-all-btn-circle {
+                width: 40px;
+                height: 40px;
+            }
+
+            .see-all-btn-circle i {
+                font-size: 14px;
+            }
+
+            .see-all-btn-text {
+                font-size: 18px;
+            }
+        }
     </style>
 
 </head>
@@ -358,6 +435,11 @@
                                         <div class="tt-grid-item isotope-item nature">
                                             <div class="ttgr-item-inner">
 
+                                                <div class="tt-heading tt-heading-xlg anim-fadeinup">
+                                                    <h2 class="tt-heading-title">Selected Works</h2>
+                                                    <!-- You can use <br> to break a text line if needed -->
+                                                </div>
+
                                                 <!-- Begin portfolio grid item 
 													===============================
 													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
@@ -382,6 +464,18 @@
                                                         </div> <!-- /.pgi-caption-inner -->
                                                     </div> <!-- /.pgi-caption -->
                                                 </div>
+
+                                                <!-- Begin See All Works Button -->
+                                                <div class="see-all-works-btn-wrap">
+                                                    <a href="portfolio.html" class="see-all-works-btn magnetic-item">
+                                                        <span class="see-all-btn-text">See All Works</span>
+                                                        <div class="see-all-btn-circle">
+                                                            <i class="fas fa-arrow-right"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End See All Works Button -->
+
                                                 <!-- End portfolio grid item -->
 
                                             </div> <!-- /.ttgr-item-inner -->
