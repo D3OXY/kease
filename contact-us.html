@@ -350,8 +350,41 @@
 										* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
 										* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
 										-->
-                                    <div data-tf-live="01J94KJERVCHEN70EACMM7S6H8"></div>
-                                    <script src="//embed.typeform.com/next/embed.js"></script>
+                                    <form id="contact-form" class="tt-form-filled anim-fadeinup">
+                                        <div class="tt-form-group">
+                                            <label for="user_help">How can we help you? *</label>
+                                            <textarea id="user_help" name="user_help" class="tt-form-control" rows="4"
+                                                placeholder="If you don't have anything specific, we'll be happy to brainstorm with you to find a great way to solve your problem!"
+                                                required></textarea>
+                                        </div>
+
+                                        <div class="tt-form-group">
+                                            <label for="user_name">First, what's your name? *</label>
+                                            <input type="text" id="user_name" name="user_name" class="tt-form-control"
+                                                placeholder="Your name" required>
+                                        </div>
+
+                                        <div class="tt-form-group">
+                                            <label for="user_email">What about your email? *</label>
+                                            <input type="email" id="user_email" name="user_email"
+                                                class="tt-form-control" placeholder="your.email@example.com" required>
+                                            <small class="tt-form-text">Not to worry, we won't be blowing up your
+                                                inbox.</small>
+                                        </div>
+
+                                        <!-- Submit Button -->
+                                        <div class="tt-form-group margin-top-40">
+                                            <button type="submit" class="tt-btn tt-btn-primary tt-btn-lg">
+                                                <span class="tt-btn-text">Send Message</span>
+                                                <span class="tt-btn-loading" style="display: none;">
+                                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Success/Error Messages -->
+                                        <div id="form-messages" style="margin-top: 20px;"></div>
+                                    </form>
                                     <!-- End form -->
 
                                 </div> <!-- /.tt-col -->
@@ -482,7 +515,11 @@
     <!-- Template master JS -->
     <script src="assets/js/theme.js"></script>
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <!-- Contact Form JS -->
+    <script src="assets/js/contact-form.js"></script>
 
 </body>
 
